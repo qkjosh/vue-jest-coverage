@@ -1,27 +1,7 @@
-# test-project
+# vue-test-coverage
 
-> A Vue.js project
+This is a simple repro of a jest coverage issue I've run into lately. Coverage shows 100% on all metrics, despite the unit test not testing everything.
 
-## Build Setup
+It looks like the entire component template is considered as one statement; none of the methods are considered.
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+![image](https://user-images.githubusercontent.com/14936049/174923778-8e55c95f-a776-4754-9d73-9843c9137265.png)
